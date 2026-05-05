@@ -13,7 +13,7 @@ const app = express();
 // ─── Middleware ───────────────────────────────────────────────────────────────
 app.use(express.json());
 app.use(cors({
-  origin: 'http://localhost:5173', // React Vite dev server
+  origin: ['https://dzshop-frontend-cgu5.vercel.app', 'http://localhost:5173'],
   methods: ['GET', 'POST', 'PUT', 'DELETE'],
   allowedHeaders: ['Content-Type', 'Authorization'],
 }));
